@@ -7,8 +7,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 @Table(name = "author")
 @Entity(name = "author")
+@Getter
+@Setter
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Author {
 
 	@Id
@@ -21,6 +32,7 @@ public class Author {
 	
 	public Author(String name) {
 		this.name = name;
+		this.id = id;
 	}
 	
 	
