@@ -30,7 +30,7 @@ public class BookController {
 		ModelAndView mv = new ModelAndView("bookform");
 		// devolvendo a lista de autores para a variavel authorList
 		List<Author> authorList = this.authorService.getAuthorList();
-		mv.addObject("authorlist", authorList);
+		mv.addObject("authorList", authorList);
 		
 		return mv;
 	}
